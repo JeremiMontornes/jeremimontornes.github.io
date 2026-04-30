@@ -24,12 +24,18 @@
   <main id="top">
     <section class="hero" aria-label="Introduction">
       <div class="hero-content">
-        <p class="lead">Deputy Head of the Microeconomic Analysis Division at Banque de France, working on inflation, wage dynamics, input-output models.</p>
-        <div class="hero-actions" aria-label="Primary links">
-          <a class="button primary" href="#publications">Selected publications</a>
-          <a class="button secondary" href="https://fr.linkedin.com/in/jeremi-montornes-631a492a8">LinkedIn</a>
-          <a class="button secondary" href="https://scholar.google.com/citations?user=63_15jwAAAAJ&hl=fr">Google Scholar</a>
-        </div>
+        <section class="chart-card" aria-labelledby="inflation-chart-title">
+          <div class="chart-heading">
+            <p class="eyebrow">Graphique 1</p>
+            <h2 id="inflation-chart-title">Évolution de la perception et des anticipations d'inflation</h2>
+            <p>Chefs d'entreprise, médianes en %, T4 2021 - T1 2026.</p>
+          </div>
+          <div class="chart-wrap">
+            <svg id="inflation-chart" role="img" aria-label="Évolution de la perception et des anticipations d'inflation, médianes en pourcentage"></svg>
+            <div class="chart-tooltip" id="chart-tooltip" aria-hidden="true"></div>
+          </div>
+          <a class="chart-source" href="https://www.banque-france.fr/fr/statistiques/inflation/anticipations-dinflation-2026-q1">Source: Banque de France, Anticipations d'inflation - 2026-Q1</a>
+        </section>
       </div>
       <aside class="profile-panel" aria-label="Profile summary">
         <img src="https://avatars.githubusercontent.com/u/39963079?v=4" alt="Portrait of Jérémi Montornès" width="160" height="160">
@@ -101,5 +107,6 @@
   <footer class="footer">
     <p>© Jérémi Montornès. Built with GitHub Pages.</p>
   </footer>
+  <script src="chart.js"></script>
 </body>
 </html>

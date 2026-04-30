@@ -98,6 +98,82 @@ main {
   max-width: 720px;
 }
 
+.chart-card {
+  width: 100%;
+}
+
+.chart-heading {
+  max-width: 660px;
+}
+
+.chart-heading h2 {
+  margin: 0;
+  max-width: 660px;
+  font-size: 1.36rem;
+  line-height: 1.25;
+}
+
+.chart-heading p:last-child {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.chart-wrap {
+  position: relative;
+  margin-top: 26px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0 12px;
+}
+
+#inflation-chart {
+  display: block;
+  width: 100%;
+  min-height: 360px;
+}
+
+.chart-grid {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.chart-axis-label,
+.chart-legend-label {
+  fill: var(--muted);
+  font-size: 13px;
+}
+
+.chart-line {
+  vector-effect: non-scaling-stroke;
+}
+
+.chart-tooltip {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: 3px;
+  width: 210px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 12px 36px rgba(22, 32, 38, 0.12);
+  padding: 10px 12px;
+  color: var(--ink);
+  font-size: 0.82rem;
+  pointer-events: none;
+}
+
+.chart-tooltip[aria-hidden="true"] {
+  display: none;
+}
+
+.chart-source {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
 .eyebrow {
   margin: 0 0 14px;
   color: var(--warm);
@@ -355,6 +431,10 @@ h3 {
   .research-grid article,
   .affiliation-card {
     min-height: 0;
+  }
+
+  #inflation-chart {
+    min-height: 300px;
   }
 
   .contact {
