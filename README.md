@@ -1,4 +1,4 @@
-# Jérémie Montornès
+# Jérémi Montornès
 
 I work as an applied economist at Banque de France.
 
