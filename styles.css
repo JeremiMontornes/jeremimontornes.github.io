@@ -3,7 +3,7 @@
   --ink: #162026;
   --muted: #53646d;
   --line: #d8e1e5;
-  --paper: #f7f4ed;
+  --paper: #ffffff;
   --surface: #ffffff;
   --accent: #1d4f5f;
   --accent-strong: #123843;
@@ -38,7 +38,7 @@ a {
   top: 0;
   z-index: 10;
   border-bottom: 1px solid rgba(216, 225, 229, 0.9);
-  background: rgba(247, 244, 237, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(14px);
 }
 
