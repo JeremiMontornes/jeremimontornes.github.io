@@ -26,16 +26,22 @@
   <main id="top">
     <section class="hero" aria-label="Introduction">
       <div class="hero-content">
-        <section class="chart-card" aria-labelledby="inflation-chart-title">
+        <section class="chart-card" aria-labelledby="made-in-france-chart-title">
           <div class="chart-heading">
-            <h2 id="inflation-chart-title">Change in annual inflation rate perceptions and expectations</h2>
-            <p>Business leaders, median values in %, Q4 2021 - Q1 2026.</p>
+            <h2 id="made-in-france-chart-title">Made in France: domestic value added content in domestic final demand</h2>
           </div>
           <div class="chart-wrap">
-            <svg id="inflation-chart" role="img" aria-label="Change in annual inflation rate perceptions and expectations, median values in percent"></svg>
-            <div class="chart-tooltip" id="chart-tooltip" aria-hidden="true"></div>
+            <img
+              class="made-in-france-chart"
+              src="https://raw.githubusercontent.com/JeremiMontornes/madeIn/main/figures/french_va_content_in_french_internal_final_demand_by_sector_TiVA.png"
+              alt="Made in France: domestic value added content in domestic final demand by sector, OECD TiVA 2025"
+              width="2200"
+              height="1280">
           </div>
-          <a class="chart-source" href="https://www.banque-france.fr/en/statistics/inflation/inflation-expectations-2026-q1">Source: Banque de France, Inflation Expectations - 2026-Q1</a>
+          <p class="chart-source">
+            Update of
+            <a href="https://www.banque-france.fr/en/publications-and-statistics/publications/made-france-and-reshoring-multi-regional-input-output-tables">Bourgeois Montornès (2025)</a>
+          </p>
         </section>
       </div>
       <aside class="profile-panel" aria-label="Profile summary">
@@ -108,6 +114,5 @@
   <footer class="footer">
     <p>© Jérémi Montornès. Built with GitHub Pages.</p>
   </footer>
-  <script src="chart.js"></script>
 </body>
 </html>
